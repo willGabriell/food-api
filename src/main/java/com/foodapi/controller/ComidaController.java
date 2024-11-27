@@ -17,7 +17,7 @@ public class ComidaController {
     @Autowired
     ComidaService service;
 
-    @PostMapping
+    @PostMapping("/adicionar")
     public void save(@RequestBody Comida comida) {
         if(comida != null) {
             service.save(comida);
