@@ -20,6 +20,7 @@ public class ComidaController {
     @PostMapping("/adicionar")
     public void save(@RequestBody Comida comida) {
         if(comida != null) {
+            System.out.println("TEste");
             service.save(comida);
         }
     }
